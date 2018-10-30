@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>PhoneBook</title>
+  <link rel="icon" href="./img/res/phone-book-logo.png">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <!-- Fluent Design Bootstrap -->
+  <link rel="stylesheet" href="./css/fluent.css">
+  <!-- Micon icons-->
+  <link rel="stylesheet" href="./css/micon.min.css">
+  <!--Custom style -->
+  
+
+</head>
+
+<body>
+
+  <!-- Start your project here-->
+  
+      
+  <nav class="navbar navbar-dark bg-default">
+    <div class="col"  >
+    <a class="navbar-brand" class="m-2" href="#">
+      <img src="./img/res/phone-book-logo.png" height="32" alt="PB" class="m-1">
+      <span class="d-inline-block align-top"><H2 class="text-light">PhoneBook</H2></span>
+    </a>
+    </div>
+    <div class="col-6 m-2">
+      <input placeholder="Фамилия, имя или отчество" type="text" id="name" class="form-control" style="visibility: visible;">
+    </div>
+    <div class="col">
+      <button id="expand" class="navbar-toggler btn btn-default" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
+      aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav>
+    
+  <div class="collapse" id="navbarToggleExternalContent">
+    <div class="bg-light p-4">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-8">
+                <label for="name1">Фамилия, имя или отчество</label>
+                <input placeholder="Иванов Иван Иванович" type="text" id="name1" class="form-control">
+            </div>
+          </div>
+            <div class="row justify-content-center">
+              <div class="col-4">
+                  <label for="phoneNumber">Номер телефона</label>
+                  <input placeholder="+7 (000) 000-0000" type="text" id="phoneNumber" class="form-control">
+              </div>
+              <div class="col-4">
+                  <label for="email">Email</label>
+                  <input placeholder="example@email.com" type="text" id="email" class="form-control">
+              </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-4">
+                    <label for="subdivision">Подразделение</label>
+                    <input placeholder="Отдел маркетинга" type="text" id="subdivision" class="form-control">
+                </div>
+                <div class="col-4">
+                  <div class="p-1">
+                    <label for="position">Должность</label>
+                    <select id="position" class="form-control">
+                    </select>
+                  </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-8">
+                    <label for="address">Адрес</label>
+                    <input placeholder="633428, г. Александро-Невский, ул. Авиаконструктора Сухого, дом 8, квартира 186" type="text" id="address" class="form-control">
+                </div>
+            </div>
+          
+          <div class="row justify-content-center">
+            <div class="col-3 p-2">
+              <button type="button" class="btn btn-outline-default" id="reset">Сбросить</button>
+            </div>
+            <div class="col-2 p-2">
+              <button type="button" class="btn btn-outline-success" id="accept">Применить</button>
+            </div>
+          </div>
+          </div>
+        </div>
+
+    </div>
+  </div>
+  
+
+  <main >
+    <div class="container">
+      <div id="result" class="row justify-content-center"></div>
+    </div>
+  </main>
+
+  
+
+  <div id="scripts">
+    <script src="js/main.js"></script>
+  </div>
+  <!-- /Start your project here-->
+
+  <!-- Scripts -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="./js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+</body>
+
+</html>
